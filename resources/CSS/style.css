@@ -6,8 +6,9 @@ body {
   background-color: #FFF;
   min-width: 520px;
 }
-
+/* //+// HEADER STYLES //+// */
 header {
+  top: 0;
   display: inline-flex;
   width: 100%;
   height: 3rem;
@@ -66,9 +67,10 @@ a {
   font-family: 'Roboto', sans-serif;
   color: #666;
 }
-
+/* //+// HEADER STYLES //+// */
 @media only screen and (max-width: 840px){
   html {
     font-size: 14px;
   }
 }
+/* //+// HEADER STYLES //+// */
