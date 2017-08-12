@@ -68,14 +68,44 @@ a {
   color: #666;
 }
 
-.mobileNave {
-  display: none;  
+.mobileNav {
+  display: none;
 }
 
-/* //+// HEADER STYLES //+// */
+/* //+// RESPONSIVE HEADER STYLES //+// */
 @media only screen and (max-width: 840px){
   html {
     font-size: 14px;
   }
 }
-/* //+// HEADER STYLES //+// */
+
+@media only screen and (max-width: 620px){
+  .headerNav {
+    display: none;
+  }
+
+  .mobileNav {
+    width: 100%;
+    display: inline-flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    flex-flow: row nowrap;
+  }
+
+  .mobileNav div {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .mobileNav h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+  }
+}
+
+
+/* //+//END HEADER STYLES //+// */
