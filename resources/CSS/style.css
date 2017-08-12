@@ -67,6 +67,11 @@ a {
   font-family: 'Roboto', sans-serif;
   color: #666;
 }
+
+.mobileNave {
+  display: none;  
+}
+
 /* //+// HEADER STYLES //+// */
 @media only screen and (max-width: 840px){
   html {
