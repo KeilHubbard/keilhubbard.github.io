@@ -6,6 +6,11 @@ body {
   background-color: #FFF;
   min-width: 520px;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* //+// HEADER STYLES //+// */
 header {
   top: 0;
@@ -14,11 +19,6 @@ header {
   height: 3rem;
   border-bottom: 1px solid #666;
   z-index: 999;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 .headerLogo {
@@ -65,7 +65,8 @@ a {
   text-align: center;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
-  color: #666;
+  color: #000;
+  opacity: 0.5;
 }
 
 .mobileNav {
@@ -73,14 +74,18 @@ a {
 }
 
 /* //+// RESPONSIVE HEADER STYLES //+// */
-@media only screen and (max-width: 840px){
+@media only screen and (max-width: 920px){
   html {
     font-size: 14px;
   }
 }
 
-@media only screen and (max-width: 620px){
+@media only screen and (max-width: 680px){
   .headerNav {
+    display: none;
+  }
+
+  .headerLogo {
     display: none;
   }
 
@@ -106,6 +111,8 @@ a {
     color: #666;
   }
 }
-
-
 /* //+//END HEADER STYLES //+// */
+/* //+// START BODY STYLES //+// */
+.bodyContainer {
+
+}
