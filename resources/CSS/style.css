@@ -4,7 +4,7 @@ html {
 
 body {
   background-color: #FFF;
-  min-width: 520px;
+  width: 100%;
 }
 
 a {
@@ -45,7 +45,7 @@ header {
 }
 
 .headerNav {
-  width: 90%;
+  width: 60%;
   padding: 0 4rem;
   display: inline-flex;
   height: 3rem;
@@ -59,17 +59,25 @@ header {
   padding-left: 1rem;
   margin: 0;
   justify-content: space-between;
+  opacity: 0.7;
 }
 
 .headerNav h2 {
   text-align: center;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
-  color: #000;
-  opacity: 0.5;
+  color: #333;
 }
 
-.mobileNav {
+.mobilePull {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenu h2 {
   display: none;
 }
 
@@ -81,6 +89,10 @@ header {
 }
 
 @media only screen and (max-width: 680px){
+  header {
+    display: none;
+  }
+
   .headerNav {
     display: none;
   }
@@ -89,30 +101,53 @@ header {
     display: none;
   }
 
-  .mobileNav {
-    width: 100%;
-    display: inline-flex;
-    height: 3rem;
-    align-items: center;
-    justify-content: center;
+/* ----- */
+.mobilePull{
+    cursor:pointer;
+}
+
+.mobileMenu {
+    width:100%;
     margin: 0;
-    flex-flow: row nowrap;
+    height:12rem;
+    display:none;
+    padding: 0;
   }
 
-  .mobileNav div {
+.mobileMenu h2 {
+  display:block;
+  text-align: center;
+  font-family:'Roboto', sans-serif;
+  height: 2rem;
+  margin: auto;
+  padding: .75rem 0 .25rem 0;
+  z-index: 999;
+  opacity: 0.6;
+  color: #000;
+}
+.slide {
+	margin:0;
+	padding:0;
+	border-top:solid 2px #cc0000;
+}
+.mobilePull {
+	display:block;
+    width:100%;
     margin: 0;
-    justify-content: center;
-  }
-
-  .mobileNav h2 {
+    padding: 0;
+	font-family:arial,sans-serif;
+	color:#666;
+	text-decoration:none;
+  text-align: center;
+}
+.mobilePull h2 {
     text-align: center;
-    font-size: 1.25rem;
     font-family: 'Roboto', sans-serif;
-    color: #666;
-  }
+    font-size: 2rem;
+}
+/* ----- */
+
+
 }
 /* //+//END HEADER STYLES //+// */
 /* //+// START BODY STYLES //+// */
-.bodyContainer {
-
-}
