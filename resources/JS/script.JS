@@ -22,6 +22,7 @@ $(document).ready(function(){
     $('.darkMode').css('display', 'inline-flex');
     $('body').css('background-color', '#555');
     $('.headerLogo').css('color', '#FFF');
+    $('.headerLogo img').replaceWith('<img src="resources/images/LogoDark.svg">')
   });
 
   $('.darkMode').click(function(){
@@ -30,7 +31,9 @@ $(document).ready(function(){
     $('.lightMode').css('display', 'inline-flex');
     $('body').css('background-color', '#FFF');
     $('.headerLogo').css('color', '#000');
+    $('.headerLogo img').replaceWith('<img src="resources/images/Logo.svg">')
   });
+
 
 
 });
