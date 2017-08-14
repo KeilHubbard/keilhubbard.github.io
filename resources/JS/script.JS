@@ -2,16 +2,35 @@
 
 $(document).ready(function(){
 
-  var $StdNavItem = $('.headerNav div, .mobileMenu h2');
+  var $StdNavItem = $('.headerNav h2, .mobileMenu h2');
 
   $StdNavItem.mouseenter(function(){
     $(this).fadeTo(200, 1);
   });
   $StdNavItem.mouseleave(function(){
-    $(this).fadeTo(200, 0.5);
+    $(this).fadeTo(200, 0.6);
   });
 
   $('.mobilePull').click(function(){
-        $('.mobileMenu').slideToggle('slow');
-    });
+    $('.mobileMenu').slideToggle('slow');
+  });
+
+
+  $('.lightMode').click(function(){
+    $StdNavItem.css('color', '#FFF');
+    $('.lightMode').css('display', 'none');
+    $('.darkMode').css('display', 'inline-flex');
+    $('body').css('background-color', '#555');
+    $('.headerLogo').css('color', '#FFF');
+  });
+
+  $('.darkMode').click(function(){
+    $StdNavItem.css('color', '#333');
+    $('.darkMode').css('display', 'none');
+    $('.lightMode').css('display', 'inline-flex');
+    $('body').css('background-color', '#FFF');
+    $('.headerLogo').css('color', '#000');
+  });
+
+
 });

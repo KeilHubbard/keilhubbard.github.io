@@ -17,6 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="resources/CSS/normalize.css" type="text/css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/e84c423a53.js"></script>
   <script type="text/javascript" src="resources/JS/script.JS"></script>
   <title>Keil Hubbard</title>
   <link rel="icon" href="./favicon.ico" type="image/x-icon" />
@@ -26,25 +27,33 @@
 <!--//+//- ALL CONTENT PRESENT ON THIS PAGE AND ALL PAGES IN THIS DOMAIN ARE PROPERTY OF KEIL HUBBARD/KEILHUBBARD.COM - unless otherwise stated -//+//-->
   <body>
 <!-- //+// START HEADER //+// -->
-    <header>
+<!-- //+// Standard Header //+// -->
+    <header class="stdHeader">
       <div class="headerLogo">
         <img src="resources/images/Logo.png">
-        <h2><a href="#"><span>Keil</span>Hubbard</a></h2>
+        <h2><a href="#">Keil<span>Hubbard</span></a></h2>
       </div>
-      <nav class="headerNav">
+      <nav class="headerNav ">
         <div><a href="#"><h2>Freelance &amp; Contract</h2></a></div>
         <div><a href="#"><h2>About</h2></a></div>
         <div><a href="#"><h2>Impossible List</h2></a></div>
         <div><a href="#"><h2>Contact Me</h2></a></div>
       </nav>
+      <div class="lightMode"><i class="fa fa-moon-o fa-lg"></i><i class="fa fa-toggle-off"></i></div>
+      <div class="darkMode"><i class="fa fa-sun-o fa-lg"></i><i class="fa fa-toggle-on"></i></div>
     </header>
+<!-- //+// END - Standard Header //+// -->
+<!-- //+// Mobile Header //+// -->
+    <header class="mobileHeader">
        <div class="mobileMenu">
          <h2><a href="#">Freelance &amp; Contract</a></h2>
          <h2><a href="#">About</h2></a></h2>
          <h2><a href="#">Impossible List</a></h2>
          <h2><a href="#">Contact Me</a></h2>
        </div>
-       <div class="mobilePull"><h2 class="slide">MENU</h2></div>
+       <div class="mobilePull"><h2 class="slide"><i class="fa fa-navicon"></i>MENU</h2></div>
+    </header>
+<!-- //+// END - Mobile Header //+// -->
 <!-- //+// END HEADER //+// -->
     <div class="bodyContainer">
     </div>
