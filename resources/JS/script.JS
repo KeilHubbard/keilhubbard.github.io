@@ -3,6 +3,7 @@
 $(document).ready(function(){
 
   var $StdNavItem = $('.headerNav h2, .mobileMenu h2');
+  var $allText = $('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p')
 
   $StdNavItem.mouseenter(function(){
     $(this).fadeTo(200, 1);
@@ -12,12 +13,12 @@ $(document).ready(function(){
   });
 
   $('.mobilePull').click(function(){
-    $('.mobileMenu').slideToggle('slow');
+    $('.mobileMenu').slideToggle(600);
   });
 
 /*Start Light/Dark Toggles*/
 /*Set to Dark/Night Mode*/
-  $('.lightMode').click(function(){
+  $('.lightMode i').click(function(){
     $StdNavItem.css('color', '#FFF');
     $('.lightMode').css('display', 'none');
     $('.darkMode').css('display', 'inline-flex');
@@ -27,7 +28,7 @@ $(document).ready(function(){
     $('.headerLogo img').replaceWith('<img src="resources/images/LogoDark.svg">');
   });
 
-  $('.darkMode').click(function(){
+  $('.darkMode i').click(function(){
     $StdNavItem.css('color', '#333');
     $('.darkMode').css('display', 'none');
     $('.lightMode').css('display', 'inline-flex');

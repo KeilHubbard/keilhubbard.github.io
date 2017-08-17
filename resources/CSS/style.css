@@ -4,7 +4,7 @@ html {
 
 body {
   background-color: #FFF;
-  width: 98%;
+  width: 90%;
   margin: auto;
 }
 
@@ -26,21 +26,6 @@ a {
   z-index: 999;
 }
 
-.darkMode {
-  display: none;
-  cursor: pointer;
-  color: #EEE;
-  align-items: center;
-  padding-left: 10%;
-}
-
-.lightMode {
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  padding-left: 10%;
-}
-
 .headerLogo {
   display: inline-flex;
   align-items: center;
@@ -56,7 +41,7 @@ a {
 
 .headerLogo h2 {
   font-weight: 700;
-  padding-left: .2rem;
+  padding-left: .4rem;
 }
 
 .headerLogo h2 span {
@@ -72,7 +57,7 @@ a {
   align-items: center;
   justify-content: space-between;
   margin: 0;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 
 .headerNav div {
@@ -89,6 +74,21 @@ a {
   opacity: 0.7;
 }
 
+.lightMode, .darkMode {
+  cursor: pointer;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.darkMode {
+  display: none;
+  color: #EEE;
+}
+
+.lightMode {
+  display: inline-flex;
+}
+
 .lightMode :nth-child(2), .darkMode :nth-child(2) {
   padding-left: .2rem;
 }
@@ -96,19 +96,6 @@ a {
 .mobileHeader {
   display: none;
 }
-/*
-.mobilePull {
-  display: none;
-}
-
-.mobileMenu {
-  display: none;
-}
-
-.mobileMenu h2 {
-  display: none;
-}
-*/
 /* //+// RESPONSIVE HEADER STYLES //+// */
 @media only screen and (max-width: 920px){
   html {
@@ -116,7 +103,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 540px){
   .stdHeader {
     display: none;
   }
@@ -132,12 +119,16 @@ a {
   .mobileHeader {
     display: block;
   }
-/* ----- */
-.mobilePull{
-    cursor:pointer;
-}
 
-.mobileMenu {
+  body {
+    width: 100%;
+  }
+/* ----- */
+  .mobilePull{
+    cursor:pointer;
+  }
+
+  .mobileMenu {
     width:100%;
     margin: 0;
     height:12rem;
@@ -145,46 +136,40 @@ a {
     padding: 0;
   }
 
-.mobileMenu h2 {
-  display:block;
-  text-align: center;
-  font-family:'Roboto', sans-serif;
-  height: 2rem;
-  margin: auto;
-  padding: .75rem 0 .25rem 0;
-  z-index: 999;
-  opacity: 0.6;
-  color: #000;
-}
-.slide {
-	margin:0;
-	padding:0.4rem 0;
-	border-top:solid 2px #601d8e;
-}
-
-.slide :nth-child(1) {
-  padding-right: 0.4rem;
-}
-.mobilePull {
-	display:block;
-    width:100%;
-    margin: 0;
-    padding: 0;
-	font-family:arial,sans-serif;
-	color:#333;
-	text-decoration:none;
-  text-align: center;
-  background-color: #c2b1ce;
-  border-radius: 0 0 .8rem .8rem;
-}
-.mobilePull h2 {
+  .mobileMenu h2 {
+    display:block;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-}
+    font-family:'Roboto', sans-serif;
+    height: 2rem;
+    margin: auto;
+    padding: .75rem 0 .25rem 0;
+    z-index: 999;
+    opacity: 0.6;
+    color: #000;
+  }
+
+  .slide {
+	   margin:0;
+     padding:0.4rem 0;
+   }
+
+   .mobilePull {
+     display:block;
+     width:100%;
+     margin: 0;
+     padding: 0;
+     font-family:arial,sans-serif;
+     color:#333;
+     text-decoration:none;
+     text-align: center;;
+     background-color: #CCC;
+     border-top: 2px #666 solid;
+  }
+
 /* ----- */
-
-
 }
 /* //+//END HEADER STYLES //+// */
 /* //+// START BODY STYLES //+// */
+.contentContainer {
+  width: 100%
+}
