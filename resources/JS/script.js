@@ -31,7 +31,7 @@ $(document).ready(function(){
   
     function SetLightMode(){
         $StdNavItem.css('color', '#333');
-        $StdContentItem.css('color', '#333');
+        $StdContentItem.css('color', '#777');
         $('.darkMode').css('display', 'none');
         $('.lightMode').css('display', 'inline-flex');
         $('.stdHeader').css('border-bottom', '1px solid #666');
