@@ -173,3 +173,26 @@ a {
 .contentContainer {
   width: 100%
 }
+
+#contentHeader {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #666;
+}
+
+/* //+// RESPONSIVE BODY STYLES //+// */
+@media only screen and (max-width: 920px){
+
+}
+
+@media only screen and (max-width: 540px){
+  #contentHeader {
+    margin: 1rem;
+  }
+}
