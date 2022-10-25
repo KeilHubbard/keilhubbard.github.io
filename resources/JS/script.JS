@@ -3,6 +3,7 @@
 $(document).ready(function(){
 
   var $StdNavItem = $('.headerNav h2, .mobileMenu h2');
+  var $StdContentItem = $('.contentHeader');
   var $allText = $('h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p');
 
   $StdNavItem.mouseenter(function(){
@@ -19,6 +20,7 @@ $(document).ready(function(){
 //Start Light/Dark Toggles
   function SetDarkMode() {
       $StdNavItem.css('color', '#FFF');
+      $StdContentItem.css('color', '#FFF');
       $('.lightMode').css('display', 'none');
       $('.darkMode').css('display', 'inline-flex');
       $('body').css('background-color', '#555');
@@ -29,6 +31,7 @@ $(document).ready(function(){
 
   function SetLightMode(){
       $StdNavItem.css('color', '#333');
+      $StdContentItem.css('color', '#333');
       $('.darkMode').css('display', 'none');
       $('.lightMode').css('display', 'inline-flex');
       $('.stdHeader').css('border-bottom', '1px solid #666');

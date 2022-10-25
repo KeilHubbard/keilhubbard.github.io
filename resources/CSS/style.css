@@ -50,8 +50,8 @@ a {
 }
 
 .headerNav {
-  width: 60%;
-  padding: 0 4rem;
+  width: 100%;
+  padding-left: 4rem;
   display: inline-flex;
   height: 3rem;
   align-items: center;
@@ -77,7 +77,6 @@ a {
 .lightMode, .darkMode {
   cursor: pointer;
   align-items: center;
-  padding-left: 10%;
 }
 
 .darkMode {
@@ -86,7 +85,7 @@ a {
 }
 
 .lightMode {
-  display: inline-flex;
+  color: #333;
 }
 
 .lightMode :nth-child(2), .darkMode :nth-child(2) {
@@ -103,7 +102,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 620px){
   .stdHeader {
     display: none;
   }
@@ -174,7 +173,7 @@ a {
   width: 100%
 }
 
-#contentHeader {
+.contentHeader {
   display: block;
   width: 100%;
   margin: 0;
@@ -183,7 +182,7 @@ a {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   text-decoration: none;
-  color: #666;
+  color: #333;
 }
 
 /* //+// RESPONSIVE BODY STYLES //+// */
@@ -191,8 +190,8 @@ a {
 
 }
 
-@media only screen and (max-width: 540px){
-  #contentHeader {
+@media only screen and (max-width: 620px){
+  .contentContainer {
     margin: 1rem;
   }
 }
